@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff000d70, #00ff22);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.decrease .h2:first-child {
+    opacity: 1;
+}
+
+@media (min-width: 1081px) {
+    h1 {
+        min-height: 10vh;
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 80px;
+    }
+
+    .counter-grid {
+        display: grid;
+        min-height: 90vh;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .counter-grid > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    h2 {
+        position: absolute;
+        text-transform: uppercase;
+        bottom: 160px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .increase-div:hover .increase-header {
+        opacity: 1;
+    }
+
+    .decrease-div:hover .decrease-header {
+        opacity: 1;
+    }
+
+    .increase-header {
+        color: rgb(12, 90, 12);
+    }
+
+    .decrease-header {
+        color: rgb(136, 31, 29);
+    }
+
+    span {
+        text-align: center;
+        margin: auto;
+        font-size: 3rem;
+    }
+    
+    button {
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        cursor: pointer;
+        font-size: 3rem;
+        border: none;
+        background: rgba(72, 95, 31, .6);
+        transition: 1s;
+        z-index: 500;
+    }
+    
+    button:last-child {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    
+    button:hover {
+        box-shadow: 5px 8px 8px 5px rgba(0, 0, 0, .2);
+        background-color: white;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+    h1 {
+        min-height: 10vh;
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 80px;
+    }
+
+    .counter-grid {
+        display: grid;
+        min-height: 90vh;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(3, 225px);
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .counter-grid > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    h2 {
+        position: absolute;
+        text-transform: uppercase;
+        bottom: 160px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .increase-div:hover .increase-header {
+        opacity: 1;
+    }
+
+    .decrease-div:hover .decrease-header {
+        opacity: 1;
+    }
+
+    .increase-header {
+        color: rgb(12, 90, 12);
+    }
+
+    .decrease-header {
+        color: rgb(136, 31, 29);
+    }
+    
+    span {
+        text-align: center;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+    
+    button {
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        cursor: pointer;
+        font-size: 3rem;
+        border: none;
+        background: rgba(72, 95, 31, .6);
+        transition: 1s;
+        z-index: 500;
+    }
+    
+    button:last-child {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    
+    button:hover {
+        box-shadow: 5px 8px 8px 5px rgba(0, 0, 0, .2);
+        background-color: white;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        min-height: 10vh;
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 80px;
+    }
+
+    .counter-grid {
+        display: grid;
+        min-height: 90vh;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    h2 {
+        position: absolute;
+        text-transform: uppercase;
+        bottom: 160px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .increase-div:hover .increase-header {
+        opacity: 1;
+    }
+
+    .decrease-div:hover .decrease-header {
+        opacity: 1;
+    }
+
+    .increase-header {
+        color: rgb(12, 90, 12);
+    }
+
+    .decrease-header {
+        color: rgb(136, 31, 29);
+    }
+
+    .counter-grid > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    span {
+        text-align: center;
+        margin: auto;
+        font-size: 3rem;
+    }
+    
+    button {
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        cursor: pointer;
+        font-size: 2rem;
+        border: none;
+        background: rgba(72, 95, 31, .6);
+        transition: 1s;
+        z-index: 500;
+    }
+    
+    button:last-child {
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    
+    button:hover {
+        box-shadow: 5px 8px 8px 5px rgba(0, 0, 0, .2);
+        background-color: white;
+    }
+}
